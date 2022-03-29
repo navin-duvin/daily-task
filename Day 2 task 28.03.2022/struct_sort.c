@@ -13,7 +13,7 @@ int main()
     printf("Enter the number of student:");
     scanf("%d",&n);
     for(int i=0;i<n;i++){
-        printf("Enter name, roll and marks of student:\n");
+        printf("Enter name, roll and percentage of student:\n");
   scanf("%s%d%f",s[i].name, &s[i].rollno, &s[i].percentage);
     }
     
