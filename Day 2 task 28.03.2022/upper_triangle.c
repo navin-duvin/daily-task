@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+int triangular(int [][],int n){
+	for (int i = 1; i < n; i++)
+		for (int j = 0; j < i; j++)
+			if (mat[i][j] != 0)
+				return  0;
+			else
+				return 1;
+}
 int main()
 {
 	int n;
@@ -13,13 +21,8 @@ int main()
 			for(j = 0; j < n; j++)
 			scanf("%d",&mat[i][j]);
 		}
-
-	for (i = 1; i < n; i++)
-		for (j = 0; j < i; j++)
-			if (mat[i][j] != 0)
-				flag = 0;
-			else
-				flag = 1;
+	void (*trianglepoint)(int[][],int)=triangular;
+	flag = triangular(mat,n);
 
 	if (flag == 1)
 		printf("Upper Triangular Matrix\n");
