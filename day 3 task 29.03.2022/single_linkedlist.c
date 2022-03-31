@@ -81,13 +81,11 @@ int main(){
     scanf("%d",&choice);
     while(choice!=0){
         switch(choice){
-            case 1:
-                printf("Enter the position");
+            case 1:printf("Enter the position");
                 scanf("%d",&position);
                 insertnode(position);
                 break;
-            case 2:
-                printf("Enter the position");
+            case 2:printf("Enter the position");
                 scanf("%d",&position);
                 delete(position);
                 break;
