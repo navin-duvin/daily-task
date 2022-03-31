@@ -1,12 +1,11 @@
 #include <stdio.h>
 void main()
 {
-	int arr[3][3];
 	int i, j, x, y;
 	int  even,  odd;
- 
 	printf("Enter the order of the matrix \n");
 	scanf("%d %d", &x, &y);
+	int arr[x][y];
 	printf("Enter the elements of matrix \n");
     even = 0;
     odd = 0;
