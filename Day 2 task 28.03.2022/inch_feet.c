@@ -1,3 +1,13 @@
+/*
+   feet1 =30
+   inch1 = 20
+   
+   feet2=20
+   inch2=10
+   
+   1feet=12inch
+*/
+
 #include <stdio.h>
 
 struct Distance {
