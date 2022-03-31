@@ -1,5 +1,6 @@
 #include<stdio.h>
-int insert(int *arr,int n){
+
+int insert(int arr[],int n){
 	int i,pos,element;
 	printf("Enter the element position - ");
 	scanf("%d",&pos);
