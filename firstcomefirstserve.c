@@ -8,9 +8,7 @@ struct process{
 };
 
 struct process proc[10];
-    int p,burst;
-    float average_turnaround_time,average_waiting_time,total=0;
-
+    int p;
 void turnaround(int p){
     for(int i=0;i<p;i++){
         proc[i].turnaround_time=proc[i].waiting_time+proc[i].burst_time;
