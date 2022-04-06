@@ -33,7 +33,7 @@ void addfirst(){
     head=first;
     count++;
 }
-void middle(){
+void addmiddle(){
 	newnode=(struct node *)malloc(sizeof(struct node));
 	printf("Enter the position:");
 	scanf("%d",&pos);
@@ -52,9 +52,7 @@ void middle(){
 	}
 	
 }
-void delete(){
-	
-}
+
 int listsize(){
 	return count;
 }
@@ -69,10 +67,46 @@ void display(){
 		print=print->next;
 	}
 }
-
+void deletefirst(){
+	if(head==NULL){
+		printf("List is empty");
+	}else{
+	temp=head;
+	head=head->next;
+	free(temp);
+}
+}
+void deletelast(){
+	struct node *prevnode;
+	//prevnode=(struct node *)malloc(sizeof(struct node));
+	temp=head;
+	while(temp->next!=NULL){
+		prevnode=temp;
+		temp=temp->next;
+	}if(temp==head){
+		head=NULL;
+	}else{
+		prevnode->next=NULL;
+	}
+	free(temp);
+}
+void deletemiddle(){
+	struct node *nextnode;
+	int pos,i=1;
+	temp=head;
+	printf("Enter the position");
+	scanf("%d",&pos);
+	while(i<pos-1){
+		temp=temp->next;
+		i++;
+	}
+	nextnode=temp->next;
+	temp->next=nextnode->next;
+	free(nextnode);
+}
 int main(){
-	int choice,position,s;
-	while(choice != 5)  
+	int choice,addposition,s,delposition;
+	while(choice !=5)  
     {  
         printf("\nChose one from the below options...\n");  
         printf("1.insert\n2.display\n3.listsize\n4.isempty\n5.delete\n");  
@@ -81,43 +115,53 @@ int main(){
         switch(choice)  
         {  
             case 1:  
-                //createnode();
-                printf("press 0 to insert at end:\npress 1 to insert at beginning:");
-                scanf("%d",&position);
-                if(position==1){
-                	addfirst();
+                printf("press 0 to insert at end:\npress 1 to insert at beginning:\npress 2 to insert at middle");
+                scanf("%d",&addposition);
+                if(addposition==0){
+                	createnode();
                 	break;
 				}
-				if(position==0){
-					createnode();
+				else if(addposition==1){
+					addfirst();
 					break;
 				}else{
-					middle();
+					addmiddle();
 					break;
 				}
                 break;  
             case 2: 
                 display();
                 break;  
-            case 5:
-                delete();
-                break;
             case 3:  
 				s=listsize();
                 printf("listsize:%d\n",s);
                 break;  
             case 4:   
-               if(isempty())
+               if(!isempty())
                     printf("list is empty");
             	else
                     printf("list is not empty");
-            
-                break;   
+                break;
+			case 5:
+            	printf("press 0 to delete at beginning:\npress 1 to delete at end:\npress 2 to insert at middle:\n");
+                scanf("%d",&delposition);
+                if(delposition==0){
+                	deletefirst();
+                	break;
+				}
+				else if(delposition==1){
+					deletelast();
+					break;
+				}else{
+					deletemiddle();
+					break;
+				}
+                break;
             default:  
             {  
                 printf("Please Enter valid choice\n ");  
             }   
         }
-
 }
+return 0;
 }
