@@ -7,7 +7,7 @@ Print booked tickets (details with summary)
 Print available tickets (details with summary)
 Conditions for booking:
 
-There are a total of 63 berths for 63 confirmed tickets, 9 berths for 18 RAC tickets and 10 tickets in waiting-list. If the waiting-list ticket count goes above 10, print as â€˜No tickets availableâ€™. The following passenger details should be obtained from the user.
+There are a total of  63 confirmed tickets, 18 RAC tickets and 10 tickets in waiting-list. If the waiting-list ticket count goes above 10, print as â€˜No tickets availableâ€™. The following passenger details should be obtained from the user.
 
 Name
 Age
@@ -32,13 +32,15 @@ Print all the tickets that are unoccupied and at the end, print the total number
 #include <string.h>
 #include <stdlib.h>
 #include <string.h>
+
 struct details{
 	char name[20];
 	int age;
 	char gender[10];
 	char berth[10]; 
 	int passid;
-}passenger[100];
+	int ticket;
+}passenger[10];
 
 int ticket_no=0;
 int confirmticket=0; //MAX 10
@@ -62,6 +64,7 @@ void bookticket(){
 	count++;
 	printf("Your ticket_no:%d\n",ticket_no);
 	ticket_no++;
+	passenger[count].ticket=ticket_no;
 	
 	if(ticket_no<=10 ||  ticket_no==10){
 		confirmticket++;
@@ -72,7 +75,7 @@ void bookticket(){
 		waitinglist++;
 	}else{
 		printf("No tickets available");
-		}
+	}
 }
 
 void cancelticket(){
@@ -133,10 +136,10 @@ void passengerdetails(){
 		if(passenger[j].passid==0){
 			return ;
 	}else{
-	printf("--------------------------------------------------------\n");
+	printf("-------------------------------------------------------------------------------------------\n");
 	printf("Passenger details:\n");
-	printf("Name:%s\tPassengerid:%d\tAge:%d\tGender:%s\tBerth:%s\t\n",passenger[j].name,passenger[j].passid,passenger[j].age,passenger[j].gender,passenger[j].berth);
-	printf("--------------------------------------------------------\n");
+	printf("Name:%s\tPassengerid:%d\tTicket_no:%d\tAge:%d\tGender:%s\tBerth:%s\t\n",passenger[j].name,passenger[j].passid,passenger[j].ticket,passenger[j].age,passenger[j].gender,passenger[j].berth);
+	printf("-------------------------------------------------------------------------------------------\n");
 	}
 	}
 }
@@ -147,7 +150,7 @@ int main(int argc, char  *argv[])
 	printf("                      WELCOME                         \n");
 	printf("           RAILWAY TICKET BOOKING SYSTEM                         \n");
 	printf("======================================================\n");
-
+    
 	while(choice !=6){
 		printf("Enter the below options:\n");
 		printf("1.Book ticket\n2.cancel ticket\n3.booked ticket\n4.available ticket\n5.passenger details\n6.exit\n");
