@@ -38,7 +38,7 @@ struct details{
 	char gender[10];
 	char berth[10]; 
 	int passid;
-}passenger[10];
+}passenger[100];
 
 int ticket_no=0;
 int confirmticket=0; //MAX 10
