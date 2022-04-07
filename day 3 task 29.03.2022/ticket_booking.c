@@ -7,7 +7,7 @@ Print booked tickets (details with summary)
 Print available tickets (details with summary)
 Conditions for booking:
 
-There are a total of 63 berths for 63 confirmed tickets, 9 berths for 18 RAC tickets and 10 tickets in waiting-list. If the waiting-list ticket count goes above 10, print as ‘No tickets available’. The following passenger details should be obtained from the user.
+There are a total of 63 berths for 63 confirmed tickets, 9 berths for 18 RAC tickets and 10 tickets in waiting-list. If the waiting-list ticket count goes above 10, print as â€˜No tickets availableâ€™. The following passenger details should be obtained from the user.
 
 Name
 Age
@@ -80,12 +80,12 @@ void cancelticket(){
 	printf("Enter the passengerid:\n");
 	scanf("%d",&cancel);
 	for(k=0;k<count;k++){
-		if(passenger[k].passid==cancel){
+		if(passenger[k].passid==cancel){  
 			printf("--------------------------------------------------------\n");
 			printf("please verify your details:\n");
 			printf("Name:%s\tAge:%d\tGender:%s\tBerth:%s\t\n",passenger[k].name,passenger[k].age,passenger[k].gender,passenger[k].berth);
 		    printf("--------------------------------------------------------\n");
-				for(x=k;x<count;x++){ 
+				for(x=k;x<count;x++){
 					passenger[x].passid=passenger[x+1].passid;
 					passenger[x].age=passenger[x+1].age;
 					strcpy(passenger[x].name,passenger[x+1].name);
@@ -94,14 +94,14 @@ void cancelticket(){
 					strcpy(passenger[x].gender,passenger[x+1].gender);
 				}
 			if(RAC==0 && waitinglist==0){
+				confirmticket--;
 				return ;
 			}else{
 				RAC--;
-			    waitinglist--;	
-			}    
+			    waitinglist--;
+				confirmavailable++;	
+			}  
 			count--;	
-		}else{
-			printf("Your passenger id is not available\n");
 		}
 	}
 }
