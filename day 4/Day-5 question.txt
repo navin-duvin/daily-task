@@ -20,7 +20,7 @@ Program to find and replace a word in a text file.
 
 To remove a specific line from a text file.
 
-C program to rename a file using rename() function
+C program to rename a file using rename() function*
 
 C program to check whether a file or directory exists or not*
 
@@ -36,7 +36,7 @@ fields of a Student structure.
 
 Use binary form.
 
-To create an Employee detail using structure and update the same in a file using fscanf() and fprintf() functions.
+To create an Employee detail using structure and update the same in a file using fscanf() and fprintf() functions.*
 
 Program to write 10 Product details to a file and write them into separate files based on the type (packed, fresh) of the product.
 
