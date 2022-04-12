@@ -10,44 +10,48 @@ struct Product{
     char type[20];
     int Quantity;
     float cost;
-};
+}p[10];
 
-    struct Product p[10];
-   /* 
-     p[0] ={1,"tomato","vegetable",1,50};
-     p[1] ={2,"banana","fruit",1,10};
-     p[2] ={3,"onion","vegetable",1,40};
-     p[3] ={4,"papaya","fruit",1,60};
-     p[4] ={5,"mango","fruit",1,80};
-     p[5] ={6,"carrot","vegetable",1,100};
-     p[6] ={7,"apple","fruit",1,150};
-     p[7] ={8,"beetroot","vegetable",1,20};
-     p[8] ={9,"watermelon","fruit",1,200};
-     p[9] ={10,"ladiesfinger","vegetable",1,60};
-    */
-    printf("Enter the product details:");
-    for(int i=0;i<=10;i++){
-        printf("Enter productid:");
+int main(){
+    // struct Product p[10];
+     
+     /*p[0] = {1,"tomato","packed",1,50};
+     p[1] = {2,"banana","fresh",1,10};
+     p[2] = {3,"onion","packed",1,40};
+     p[3] = {4,"papaya","fresh",1,60};
+     p[4] = {5,"mango","fresh",1,80};
+     p[5] = {6,"carrot","packed",1,100};
+     p[6] = {7,"apple","fresh",1,150};
+     p[7] = {8,"beetroot","packed",1,20};
+     p[8] = {9,"watermelon","fresh",1,200};
+     p[9] = {10,"ladiesfinger","packed",1,60};
+      */
+    
+    printf("Enter the product details\n");
+    for(int i=0;i<10;i++){
+        printf("Enter productid:\n");
         scanf("%d",&p[i].PNo);
-        printf("Enter the Product name:");
+        printf("Enter the Product name:\n");
         scanf("%s",p[i].PName);
-        printf("Enter the product type:");
+        printf("Enter the product type:\n");
         scanf("%s",p[i].type);
-        printf("Enter the Quantity:");
+        printf("Enter the Quantity:\n");
         scanf("%d",&p[i].Quantity);
-        printf("Enter the product cost:");
+        printf("Enter the product cost:\n");
         scanf("%f",&p[i].cost);
     }
     
-int main(){
     FILE *fp,*np;
-    fp=fopen("fruit.txt","w");
-    np=fopen("vegetable.txt","w");
+    fp=fopen("fresh.txt","w");
+    np=fopen("packed.txt","w");
+    
     if(fp==NULL&& np==NULL){
         printf("file not found");
     }
+    
+    char str[]="packed";
     for(int i=0;i<10;i++){
-        if(p[i].type=="packed"){
+        if(!strcmp(p[i].type,str)){
             fwrite(&p[i],sizeof(struct Product),1,fp);
         }else{
             fwrite(&p[i],sizeof(struct Product),1,np);
