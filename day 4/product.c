@@ -42,8 +42,8 @@ int main(){
     }
     
     FILE *fp,*np;
-    fp=fopen("fresh.txt","w");
-    np=fopen("packed.txt","w");
+    fp=fopen("fresh.txt","wb+");
+    np=fopen("packed.txt","wb+");
     
     if(fp==NULL&& np==NULL){
         printf("file not found");
