@@ -6,7 +6,7 @@ Task-1
 
 Program to copy the data and add '3' to data at even location and display them.
 
-Program to remove duplicate letters in a file.
+Program to remove duplicate letters in a file.*
 
 Program to count and remove all the comment lines in a "C" Program.
 
@@ -29,15 +29,11 @@ C program to print source code of itself as output*
 To replace a specific line in a file with a line of another file.
 
 Program to read 10 student details from a file and write them into another file for those who have total marks>400 or Average>80.
-
-Note: RNo, Name, Course, Mark-1,Mark-2,Mark-3,Mark-4,Mark-5,Total and Average as  
-
-fields of a Student structure.
+Note: RNo, Name, Course, Mark-1,Mark-2,Mark-3,Mark-4,Mark-5,Total and Average as fields of a Student structure.*
 
 Use binary form.
 
 To create an Employee detail using structure and update the same in a file using fscanf() and fprintf() functions.*
 
 Program to write 10 Product details to a file and write them into separate files based on the type (packed, fresh) of the product.
-
-Note: PNo, PName, Type, Quantity, CostperUnit as  fields of a Product structure.
+Note: PNo, PName, Type, Quantity, CostperUnit as  fields of a Product structure.*
