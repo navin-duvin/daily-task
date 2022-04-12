@@ -12,7 +12,7 @@ Program to count and remove all the comment lines in a "C" Program.
 
 To copy a file.*
 
-To read numbers from a file and write even, odd numbers to separate files.
+To read numbers from a file and write even, odd numbers to separate files.*
 
 To append content to a file.*
 
