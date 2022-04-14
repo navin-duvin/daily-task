@@ -1,0 +1,33 @@
+Day-3
+
+Create a Stack and perform its operations.
+
+Evaluate the Post-fix expression using Stack.
+
+Check whether the given string is balanced or not using Stack.
+
+Example: {}[](){{[]}} - Balanced.
+
+Implement Queue using structure and pointers.
+
+Create a Singly-Linked list using pointer to a Node structure, where do all the operations like insertion, deletion, searching, traversing and reversing the data.
+
+Create a Doubly-Linked list using pointer to a Node structure, where do all the operations like insertion, deletion, searching, traversing and reversing the data.
+
+Implement first-come first-serve CPU scheduling where takes the arrival time and burst time as input and find out the following,
+
+Completion time
+
+Trun-Around time=Completion time - Arrival time.
+
+Waiting time=Turn-Around time-Burst time.
+
+Average Waiting time=Sum(Waiting time)/No. of Process.
+
+Draw the Gantt Chart.
+
+Implement Heap and write code for inserting, deleting and searching for data in it.
+
+Construct a Binary Search Tree for the following data. 23 2 45 1 8 12 10 6 43 20 18 37 30 27 11 10
+
+    10. Make a Ticket Booking System must include concepts like, Arrays, Structures, pointers.
