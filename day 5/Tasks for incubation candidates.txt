@@ -1,0 +1,116 @@
+﻿Incubation Candidates Tasks 
+Date 14-04-2022 to 17-04-2022
+
+
+C Programming 
+
+
+1. Leap year or not using decision
+
+2. Largest among three numbers using nested if statement
+
+3. Write a program to take input from 5 subjects . find total and calculate percent. On the basis of percent provide grade like  
+		IF Per > 80 “A+”
+             	   Per >= 65 and per <=80 “A”
+                   Per > =50 and per <=65 “B”
+                   Per >= 42 and per <=50 “C”
+                   Per < 42 “Fail”
+
+4. Write a program in C to read any Month number in integer and display Month name in. the word.(using switch case)
+
+5. Write a program by using a switch case. If a user enters 11 it will have area of circle and when user enters 22 it will have area of rectangle and when user enters 33 it will give area of square. When the user enters 44 it will give an area of triangle.
+
+6. Write a c program to following pattern: 
+                          *
+                          * *
+                          * * *
+                          * * * *
+7. Write a program to following pattern
+                 1
+                 1  2
+                 1  2  3
+                 1  2  3  4
+                 ==========
+                 1  2  3  4
+                 1  2  3  
+                 1  2
+                 1
+8. Write a program to following pattern    
+                            1
+                          2  3
+                        4  5   6
+                     7  8   9  10
+9. Write a program to swap two numbers using call by value and call by address.
+
+10. Build the basic management application by your own choice using functions
+
+11. Write a program to find the factorial of a number using recursion.
+
+12. Program to print all uppercase alphabets from 'A' to 'Z' using a while loop.
+
+13. Write a program to take input of 10 elements, store and display it using one Dimensional array .
+
+14. Write a program to find the sum of 10 natural no using 1-D array.
+
+15. Write a program in c to search an element from an array by linear search method.
+
+16. Write a program in c to perform addition of two matrices.
+
+17. Write a program to sum of two numbers using pointer
+
+18. Write a program in c to find the maximum number between two numbers using a Pointers
+
+19. C program to input and print array elements using pointers
+
+20. C program to copy one array to another using pointers
+
+21. Write a c program to perform string manipulation by Using library function.
+
+22. Write a program to check whether the entered string is palindrome or not.
+
+23. Write a structure to store the names, salary and hours of work per day of 10 employees in a company. Write a program to increase the salary depending on the number of hours of work per day as follows and then print the name of all the employees along with their final salaries.
+             Hours of work per day        8        10        >=12
+Increase in salary        $50        $100        $150
+
+24. Let us work on the menu of a library. Create a structure containing book information like accession number, name of author, book title and flag to know whether a book is issued or not.
+
+25. Create a menu in which the following can be done.
+1 - Display book information
+2 - Add a new book
+3 - Display all the books in the library of a particular author
+4 - Display the number of books of a particular title
+5 - Display the total number of books in the library
+6 - Issue a book
+(If we issue a book, then its number gets decreased by 1 and if we add a book, its number gets increased by 1)
+
+26. Create a structure named Date having day, month and year as its elements. 
+Store the current date in the structure. Now add 45 days to the current date and display the final date.
+
+27.  Write a C Program to count number of characters in a file
+
+28.  C program to write student record to a file
+
+29.  C program to compare data of two files in File Handling
+
+30.  C Program to Find Size of File in File Handling
+
+31. C Program to Create Employee and Update it
+
+32. C Program to Replace First Letter with Capital Letter
+
+33. C Program to Count Lines,Blank Lines,Comments in File
+
+34. C Program to Convert text of File to LowerCase
+
+35. C Program to read a text from the user and find vowels, consonants and digits and write them in different files(vowels.txt, consonants.txt, digits.txt).
+
+Application
+Build an application using C programming with your own individual concept and logic. It must follows the given concepts,
+* File Systems
+* Arrays
+* Structures
+* Enumeration 
+* Control Structures
+* Functions
+* Pointers (Call by reference)
+*
