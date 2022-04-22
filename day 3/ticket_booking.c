@@ -81,7 +81,7 @@ void cancelticket(){
 	int cancel,k,x;
 	printf("Enter the passengerid:\n");
 	scanf("%d",&cancel);
-	if(cancel<passenger[0].passid || cancel>passenger[count].passid){
+	if(cancel<passenger[0].passid && cancel>passenger[count].passid){
 			printf("passenger id is not available please verify your ID!\n");
 	}
 	for(k=0;k<count;k++){
