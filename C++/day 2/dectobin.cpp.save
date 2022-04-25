@@ -1,0 +1,27 @@
+//Write a program to convert decimal to binary.
+
+using namespace std;
+#include <iostream>
+#include <string>
+
+void dectobin(int num){
+	string bin="";
+	int re;
+	int i=1;
+	while(num!=0){
+		re =num%2;
+		num  = num/2;
+		bin += re*i;
+		i = i*10;
+	}
+	cout << num << " in decimal = " << bin
+ << " in binary" << endl ;
+}
+int main(){
+	int num;
+	cout<<"Enter the number:";
+	cin>>num;
+	dectobin(num);
+	cout << num << " in decimal = " << binary << " in binary" << endl ;
+	return 0;
+}

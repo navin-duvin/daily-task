@@ -1,0 +1,170 @@
+Day-1
+
+Task-1
+
+1. Find the nth bit of a given number.
+2. Check whether x=10 and y=?(user input) are same w/o using comparison operator.
+3. Find the Fibonacci Series up-to 'n' terms w/o using Arrays.
+4. Display the ASCII Table.
+5. Find the maximum of 'n' numbers.
+Task-2
+
+Operators and Control Structures
+The program adds, subtracts, multiplies, and divides simple integers. When the program is running, it zeros the result register and displays its contents. The user can then type in an operator and number. The result are updated and displayed. The following operators are valid:
+
+Operator  Meaning
+
++   Addition
+
+-   Subtraction
+
+*   Multiplication
+
+/   Division
+
+Example (user input is in boldface)
+
+calc
+
+Result: 0
+
+Enter operator and number: + 123
+
+Result: 123
+
+Enter operator and number: - 23
+
+Result: 100
+
+Enter operator and number: / 25
+
+Result: 4
+
+Enter operator and number: * 4
+
+Result: 16
+
+Program to clear the specified bit of a number.
+
+Write a C program which reads an integer n and prints a twin prime which has the maximum size among twin primes less than or equals to n.
+
+According to wikipedia "A twin prime is a prime number that is either 2 less or 2
+
+more than another prime number" for example, either member of the twin prime
+
+pair (41, 43). In other words, a twin prime is a prime that has a prime gap of two".
+
+Program to check the two given numbers are same or equal without using any comparison operator.
+
+Program to print series using function: x + x^3/3! + x^5/5! +…….+ x^n/n!
+
+Write a C program to which reads n digits chosen from 0 to 9 and counts the number of combinations where the sum of the digits equals to given number. Do not use the same digits in a combination.
+
+For example, the combinations where n = 2 and s = 5 are as follows:
+
+0 + 5 = 5
+
+1 + 4 = 5
+
+3 + 2 = 5
+
+Print a checkerboard (8-by-8 grid). Each square should be 5-by-3 characters wide. A 2-by-2 example follows:
+
++-----+-----+
+|     |     |
+|     |     |
+|     |     |
++-----+-----+
+|     |     |
+|     |     |
+|     |     |
++-----+-----+
+
+Task-3
+
+Data Types and Operators
+
+Write a program to calculate Simple Interest.*
+
+Write a program in which to declare all data types like integer, double, float, long integer and print value in specified format.*
+
+Compare two numbers by using ternary operator.*
+
+Write a program by using Bitwise operators (left and right shift).*
+
+Write a program for increment (pre and post) and decrement (pre and post) operators.*
+
+Write a program to convert decimal to binary.*
+
+Write a program to differentiate local and global variables.*
+
+Write a C program to show the use of static variable.*
+
+Leap year or not using decision.*
+
+Largest among three numbers using nested if statement*
+
+Program to check a person is eligible to donate blood using nested if.*
+
+Write a program to take input of 5 subject. Find total and percent based on percent provide grade like:
+
+             IF Per > 80 “A+”
+
+             Per >= 65 and per <=80 “A”
+
+             Per > =50 and per <=65 “B”
+
+             Per >= 42 and per <=50 “C”
+
+             Per < 42 “Fail”    *
+
+Write a program in C to read any month number in integer and display the month name in. the word.(using switch case)*
+
+  Write a program by using switch case if user enter 11 it will have are area of circle and when user enter 22 it will have area of rectangle and when user enter 33 it will give area of square when user enter 44 it will give area of triangle.*
+
+  Write a program in C to perform maths and character library function using switch case (use 5 operations on each)*
+
+Write a program in C to print a sum of odd no between 0 to 10 using continue.*
+
+Write a program in C to illustrate how to use goto statement.*
+
+Write a C program to print the following pattern:*
+
+                          *
+
+                          * *
+
+                          * * *
+
+                          * * * *
+
+Write a program to print the following pattern*
+
+                         1
+
+                         1 2
+
+                         1  2   3
+
+                         1  2   3  4
+
+Write a program to print the following pattern*
+
+                         1
+
+                         2 3
+
+                         4  5   6
+
+                         7  8   9  10
+
+Write a program to print the following pattern*
+
+                        $
+
+                  $          $
+
+             $         $         $
+
+         $       $         $         $
+
